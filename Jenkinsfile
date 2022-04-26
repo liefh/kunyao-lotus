@@ -22,7 +22,7 @@ pipeline {
       }
     }
 
-    stage('testResultGood') {
+    stage('testResult') {
       parallel {
         stage('testResultGood') {
           steps {
@@ -45,7 +45,7 @@ pipeline {
       }
     }
 
-    stage('deployGood') {
+    stage('deployResult') {
       parallel {
         stage('deployGood') {
           steps {
